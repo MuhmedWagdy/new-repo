@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+    font-weight: 900;
+}
+a{
+    text-decoration: none;
+    
+}
+footer ul li a{
+    color:white;
+
+
+
+
+}
+
+li{
+    list-style: none;
+    
+}
+nav{
+    background-color:#1E3D58;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+nav .logo a{
+    color: #E8EEF1;
+    font-size: larger;
+}
+.logo a font{
+    color:aqua;
+}
+nav .cart a{
+    color: #E8EEF1;
+}
+.main-container{
+    margin-top: 50px;
+    display: flex;
+    padding: 20px;
+    
+}
+
+.side{
+    flex: 20px;
+}
+.main{
+    flex: 80px;
+}
+
+.side ul li{
+    padding:10px 0 ;
+    width: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sidw ul li a{
+    
+    background-color:#1E3D58;
+    padding: 10px;
+    
+}
+.active{
+    background-color:#1f85df;
+}
+
+.product{  
+    box-shadow: 0 2px 8px 0 rgba(0 , 0 , 0 , 0.2);
+    text-align: center;
+    max-width:320px;
+    padding:10px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.product.price{
+    color:grey;
+    font-size: 18px;
+}
+.product .description{
+    padding: 20px;
+
+}
+.product img{
+    height: 200px;
+
+
+}
+    
+.product .btn{
+    background-color: #1E3D58;
+    color:black;
+    padding: 10px;
+}
+
+.product .btn:hover{
+    opacity: 0.9;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer{
+    background-color: #1E3D58;
+    color: #E8EEF1;
+  
+}
+.row{
+    display: flex;
+}
+.col{
+    padding: 20px;
+}
+.col.first{
+    flex:50%;
+}
+.col.second{
+    flex: 25%;
+
+}
+.col.third{
+    flex:25%;
+}
+
+.pdetail-container{
+    margin-bottom: 10px;
+}
+
+
+.cart-row{
+    display: flex;
+
+}
+
+
+
+
+.pdetail-container .description{
+
+    margin-bottom: 15px;
+}
+
+
+.product-detail-page{
+    width: 750px;
+    height: 423px;
+    margin: 80px auto;
+
+}
+
+table{
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+
+
+
+
+}
+table td img{
+    width: 100px;
+}
+
+.link-container{
+
+
+
+    display: flex;
+    justify-content:flex-end;
+}
+
+
+.link-container a {
+    margin: 10px;
+    color: rgb(10, 148, 153);
+    border: 1px  rgb(10, 148, 153) solid ;
+    padding: 10px;
+
+}

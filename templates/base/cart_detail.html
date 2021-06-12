@@ -1,0 +1,46 @@
+{% extends 'base/base.html' %} 
+{% block title %}    
+{% endblock title %}
+{% block content %}
+
+
+<div class="cart-container">
+<table>
+    <tr>
+        <th>Image</th>
+        <th>Product Name</th>
+        <th>Quantity</th>
+        <th>Unit Price</th>
+        <th>Price</th>
+        <th>Remove</th>
+    </tr>
+
+    {% for item in cart %}
+        {% with item.product as product %}
+        <tr>
+            <td><img src="{{product.image.url}}" alt=""</td>
+            <td>{{product.name}}</td>
+            <td>{{item.quantity}}</td>
+            <td>${{item.price}}</td>
+            <td>${{item.total_price}}</td>
+            <td>
+                <form action="{% url 'cart_remove' product.id %}" method="POST">
+                    {%  csrf_token %}
+                    <input type="submit"  value="Remove">
+                </form>
+            </td>
+        </tr>
+        {% endwith %}
+    {% endfor %}
+    <tr>
+       <td>Total</td>
+       <td colspan="4"></td>
+       <td>${{cart.get_total_price}}</td>
+    </tr>
+</table>
+<div class="link-container">
+    <a href="{% url 'product_list' %}">Continue Shoping</a>
+    <a href="#">Check Out</a>
+</div>
+</div>
+{%  endblock content %}
